@@ -9,42 +9,30 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import RxSwift
+import RxCocoa
+
 
 class GameViewController: UIViewController {
-
+    @IBOutlet weak var idTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var validationLabel: UILabel!
+    
+    
+    private lazy var viewModel = ViewModel(
+        idTextObservable: idTextField.rx.text.asObservable(), passwordTextObservable: passwordTextField.rx.text.asObservable(), model: Model()
+    )
+    private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+        viewModel.validationText.bind(to: validationLabel.rx.text).disposed(by: disposeBag)
+        viewModel.loadLabelColor.bind(to: loadLabelColor).disposed(by: disposeBag)
+    }
+
+    private var loadLabelColor: Binder<UIColor> {
+        return Binder(self) { me, color in
+            me.validationLabel.textColor = color
         }
-    }
-
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
-    }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 }

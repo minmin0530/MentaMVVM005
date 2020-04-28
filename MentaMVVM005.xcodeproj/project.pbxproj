@@ -3,31 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063A44A7967D05B09D511F17 /* Pods_MentaMVVM005.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D64A39AD57B82D483D7F1B /* Pods_MentaMVVM005.framework */; };
 		6B2964BE24586BDD0077E78D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2964BD24586BDD0077E78D /* AppDelegate.swift */; };
-		6B2964C024586BDD0077E78D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B2964BF24586BDD0077E78D /* GameScene.sks */; };
-		6B2964C224586BDD0077E78D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6B2964C124586BDD0077E78D /* Actions.sks */; };
-		6B2964C424586BDD0077E78D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2964C324586BDD0077E78D /* GameScene.swift */; };
 		6B2964C624586BDD0077E78D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2964C524586BDD0077E78D /* GameViewController.swift */; };
 		6B2964C924586BDD0077E78D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2964C724586BDD0077E78D /* Main.storyboard */; };
 		6B2964CB24586BDE0077E78D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2964CA24586BDE0077E78D /* Assets.xcassets */; };
 		6B2964CE24586BDE0077E78D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2964CC24586BDE0077E78D /* LaunchScreen.storyboard */; };
+		6B2964D624586D7A0077E78D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2964D524586D7A0077E78D /* ViewModel.swift */; };
+		6B2964D824586DBD0077E78D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2964D724586DBD0077E78D /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10D474D63C7638314047CAE7 /* Pods-MentaMVVM005.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaMVVM005.debug.xcconfig"; path = "Target Support Files/Pods-MentaMVVM005/Pods-MentaMVVM005.debug.xcconfig"; sourceTree = "<group>"; };
+		34D64A39AD57B82D483D7F1B /* Pods_MentaMVVM005.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentaMVVM005.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2964BA24586BDD0077E78D /* MentaMVVM005.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentaMVVM005.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2964BD24586BDD0077E78D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B2964BF24586BDD0077E78D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		6B2964C124586BDD0077E78D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		6B2964C324586BDD0077E78D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		6B2964C524586BDD0077E78D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6B2964C824586BDD0077E78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B2964CA24586BDE0077E78D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B2964CD24586BDE0077E78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B2964CF24586BDE0077E78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2964D524586D7A0077E78D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6B2964D724586DBD0077E78D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A937142ECEE57BE595426A86 /* Pods-MentaMVVM005.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaMVVM005.release.xcconfig"; path = "Target Support Files/Pods-MentaMVVM005/Pods-MentaMVVM005.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063A44A7967D05B09D511F17 /* Pods_MentaMVVM005.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,8 @@
 			children = (
 				6B2964BC24586BDD0077E78D /* MentaMVVM005 */,
 				6B2964BB24586BDD0077E78D /* Products */,
+				981F759E1EA391B6C63247B0 /* Pods */,
+				860238682B8FD069A0B64C3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				6B2964BD24586BDD0077E78D /* AppDelegate.swift */,
-				6B2964BF24586BDD0077E78D /* GameScene.sks */,
-				6B2964C124586BDD0077E78D /* Actions.sks */,
-				6B2964C324586BDD0077E78D /* GameScene.swift */,
 				6B2964C524586BDD0077E78D /* GameViewController.swift */,
 				6B2964C724586BDD0077E78D /* Main.storyboard */,
 				6B2964CA24586BDE0077E78D /* Assets.xcassets */,
 				6B2964CC24586BDE0077E78D /* LaunchScreen.storyboard */,
 				6B2964CF24586BDE0077E78D /* Info.plist */,
+				6B2964D524586D7A0077E78D /* ViewModel.swift */,
+				6B2964D724586DBD0077E78D /* Model.swift */,
 			);
 			path = MentaMVVM005;
+			sourceTree = "<group>";
+		};
+		860238682B8FD069A0B64C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34D64A39AD57B82D483D7F1B /* Pods_MentaMVVM005.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		981F759E1EA391B6C63247B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10D474D63C7638314047CAE7 /* Pods-MentaMVVM005.debug.xcconfig */,
+				A937142ECEE57BE595426A86 /* Pods-MentaMVVM005.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2964D224586BDE0077E78D /* Build configuration list for PBXNativeTarget "MentaMVVM005" */;
 			buildPhases = (
+				1A89C6AFBF3B2B028D238000 /* [CP] Check Pods Manifest.lock */,
 				6B2964B624586BDD0077E78D /* Sources */,
 				6B2964B724586BDD0077E78D /* Frameworks */,
 				6B2964B824586BDD0077E78D /* Resources */,
+				0DB8EC6DEDEFC744D874BA27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,22 +155,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2964C924586BDD0077E78D /* Main.storyboard in Resources */,
-				6B2964C024586BDD0077E78D /* GameScene.sks in Resources */,
 				6B2964CB24586BDE0077E78D /* Assets.xcassets in Resources */,
 				6B2964CE24586BDE0077E78D /* LaunchScreen.storyboard in Resources */,
-				6B2964C224586BDD0077E78D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DB8EC6DEDEFC744D874BA27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentaMVVM005/Pods-MentaMVVM005-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentaMVVM005/Pods-MentaMVVM005-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MentaMVVM005/Pods-MentaMVVM005-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A89C6AFBF3B2B028D238000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MentaMVVM005-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B2964B624586BDD0077E78D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2964C424586BDD0077E78D /* GameScene.swift in Sources */,
+				6B2964D824586DBD0077E78D /* Model.swift in Sources */,
 				6B2964C624586BDD0077E78D /* GameViewController.swift in Sources */,
+				6B2964D624586D7A0077E78D /* ViewModel.swift in Sources */,
 				6B2964BE24586BDD0077E78D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +354,7 @@
 		};
 		6B2964D324586BDE0077E78D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D474D63C7638314047CAE7 /* Pods-MentaMVVM005.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +372,7 @@
 		};
 		6B2964D424586BDE0077E78D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A937142ECEE57BE595426A86 /* Pods-MentaMVVM005.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
